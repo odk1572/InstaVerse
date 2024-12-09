@@ -43,7 +43,7 @@ const EditProfile = () => {
         }
         try {
             setLoading(true);
-            const res = await axios.post('http://localhost:3000/api/v1/user/profile/edit', formData,{
+            const res = await axios.post('https://instaverse-0jq1.onrender.com/api/v1/user/profile/edit', formData,{
                 headers:{
                     'Content-Type':'multipart/form-data'
                 },

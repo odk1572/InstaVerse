@@ -1,4 +1,4 @@
-import { Server } from "socket.io";
+import { Server } from "socket.io/dist";
 import express from "express";
 import http from "http";
 
@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: process.env.URL || "http://localhost:3000", // Fallback to localhost
+        origin: process.env.URL ,// Fallback to localhost
         methods: ['GET', 'POST']
     }
 });

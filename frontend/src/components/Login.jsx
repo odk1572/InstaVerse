@@ -26,7 +26,7 @@ function Login() {
             setLoading(true);
             console.log("Login request initiated with input:", input);
     
-            const res = await axios.post('http://localhost:3000/api/v1/user/login', input, {
+            const res = await axios.post('https://instaverse-0jq1.onrender.com/api/v1/user/login', input, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
